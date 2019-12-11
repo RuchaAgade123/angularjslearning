@@ -1,7 +1,2 @@
-
-// var myapp = angular.module("Quiz",[]);
-(function(){
-    angular
+angular
     .module("Quiz", [] )
-
-})();
