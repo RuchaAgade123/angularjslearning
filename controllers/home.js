@@ -1,5 +1,4 @@
-
-const turtlesData =  [
+const turtlesData = [
   {
     type: "Green Turtle",
     image_url: "https://dinoanimals.com/wp-content/uploads/2016/07/Green-sea-turtle.jpg",
@@ -74,22 +73,35 @@ const turtlesData =  [
   }
 ];
 class MyAppComponentCtrl {
-
   constructor($scope) {
     'ngInject';
     $scope.data = turtlesData;
-    this.activeturtle={};
-    this.changeActiveTurtle= function(index){
-      this.activeturtle=index;
-    }
   }
+   
+  
 }
 
 const AppComponent = {
   templateUrl: '../controllers/testdata.html',
   controller: MyAppComponentCtrl,
 }
+function ListController($scope){
+  console.log("executing"); 
+  $scope.IsDisabled=false;    
+  // $scope.activateQuiz= activateQuiz;
+  $scope.activateQuiz = function(){
+    console.log("function executing");
+    if($scope.IsDisabled){
+      $scope.IsDisabled=false;
+    }else{
+      $scope.IsDisabled=true;
+    }
+   
+    console.log("Disabled successfully");
+  };   
+}
 
 angular
   .module("Quiz", [])
-  .component("appComponent", AppComponent);
+  .component("appComponent", AppComponent)
+  .controller("list",ListController);

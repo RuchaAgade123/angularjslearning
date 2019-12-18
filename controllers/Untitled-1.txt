@@ -1,0 +1,39 @@
+ /* `
+  <div ng-repeat="turtle in data2">
+    <h4></h4>
+    <p><strong>Type: </strong>{{turtle.type}}</p>
+    <p><strong>Locations: </strong>{{turtle.locations}}</p>
+    <p><strong>Size: </strong>{{turtle.size}}</p>
+    <p><strong>Average Lifespan: </strong>{{turtle.lifespan}}</p>
+    <p><strong>Diet: </strong>{{turtle.diet}}</p>
+    <p><strong>description: </strong>{{turtle.description}}</p>
+  </div>`, */$onInit() {
+    this.data1 = turtlesData;
+  }
+
+          <!-- <div class="modal" id="turtle-info">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>
+                            {{list.activeturtle.type}}
+                        </h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <img ng-src="{{list.activeturtle.image_url}}">
+                        </div>
+                        <div class="row">
+                                <p><strong>Locations: </strong>{{turtle.locations}}</p>
+                                <p><strong>Size: </strong>{{turtle.size}}</p>
+                                <p><strong>Average Lifespan: </strong>{{turtle.lifespan}}</p>
+                                <p><strong>Diet: </strong>{{turtle.diet}}</p>
+                                <p><strong>description: </strong>{{turtle.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+
